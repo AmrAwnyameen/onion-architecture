@@ -1,10 +1,10 @@
-﻿using Core.InterFaces.IAudit;
+﻿using App.Models.Context;
+using Core.InterFaces.IAudit;
 using Services.InterFaces.ICoreService;
 using System;
 using System.Threading.Tasks;
 using System.Web;
 using UnitOfWork.Interfaces.IUnitOfWork;
-using Web.UI.Models;
 
 namespace Services.BaseService.CoreService
 {

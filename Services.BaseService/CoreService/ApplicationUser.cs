@@ -1,0 +1,4 @@
+﻿namespace Services.BaseService.CoreService
+{
+    
+}

@@ -56,10 +56,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\BaseService.cs" />
+    <Compile Include="CoreService\ApplicationUser.cs" />
     <Compile Include="CoreService\AppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\App.Models\App.Models.csproj">
+      <Project>{231D773B-E60D-40B6-9CA9-BB2DBD6F5D20}</Project>
+      <Name>App.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Core.Domain\Core.Domain.csproj">
       <Project>{93BD937E-558F-408C-A0F8-C0C5F2CEC172}</Project>
       <Name>Core.Domain</Name>
