@@ -56,8 +56,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\BaseService.cs" />
-    <Compile Include="CoreService\ApplicationUser.cs" />
     <Compile Include="CoreService\AppService.cs" />
+    <Compile Include="CoreService\User\UserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -84,10 +84,6 @@
     <ProjectReference Include="..\UnitOfWork.Interfaces\UnitOfWork.Interfaces.csproj">
       <Project>{D5D37C12-2BB5-41D1-9B1D-3DB89B456307}</Project>
       <Name>UnitOfWork.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Web.UI\Web.UI.csproj">
-      <Project>{5BAA2A5B-F22A-4036-ABC5-4F65E00846BB}</Project>
-      <Name>Web.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

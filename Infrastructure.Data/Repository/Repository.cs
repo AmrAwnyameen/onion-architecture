@@ -26,6 +26,7 @@ namespace Infrastructure.Data.Repository
         public Repository(DbContext context)
         {
             this.context = context;
+            dbset = context.Set<TEntity>();
         }
 
         public void Add(TEntity entity)
@@ -65,7 +66,7 @@ namespace Infrastructure.Data.Repository
 
         public IEnumerable<TEntity> GetAll()
         {
-            throw new NotImplementedException();
+            return dbset.ToList();
         }
 
         public TEntity GetById(string id)

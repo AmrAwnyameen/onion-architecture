@@ -43,7 +43,14 @@
   <ItemGroup>
     <Compile Include="ICoreService\IAppService.cs" />
     <Compile Include="IBaseServices\IBaseService.cs" />
+    <Compile Include="ICoreService\User\IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App.Models\App.Models.csproj">
+      <Project>{231D773B-E60D-40B6-9CA9-BB2DBD6F5D20}</Project>
+      <Name>App.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
