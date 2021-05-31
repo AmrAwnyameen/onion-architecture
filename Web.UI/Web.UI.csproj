@@ -293,10 +293,6 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\App.Models\App.Models.csproj">
-      <Project>{231D773B-E60D-40B6-9CA9-BB2DBD6F5D20}</Project>
-      <Name>App.Models</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Core.Domain\Core.Domain.csproj">
       <Project>{93BD937E-558F-408C-A0F8-C0C5F2CEC172}</Project>
       <Name>Core.Domain</Name>
@@ -316,6 +312,10 @@
     <ProjectReference Include="..\Services.InterFaces\Services.Interfaces.csproj">
       <Project>{D8CBD1B5-066E-4368-8C02-8C64681D9210}</Project>
       <Name>Services.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnitOfWork.Data\UnitOfWork.Data.csproj">
+      <Project>{8CEE7E38-03E3-44DD-8CD4-4D012C0A28C9}</Project>
+      <Name>UnitOfWork.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\UnitOfWork.Interfaces\UnitOfWork.Interfaces.csproj">
       <Project>{D5D37C12-2BB5-41D1-9B1D-3DB89B456307}</Project>

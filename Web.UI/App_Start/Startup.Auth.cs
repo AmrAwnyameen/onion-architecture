@@ -1,5 +1,5 @@
 ﻿using System;
-using App.Models.Context;
+using Core.Domain.Context;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;

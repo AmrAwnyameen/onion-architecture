@@ -9,9 +9,9 @@ namespace Core.Domain.Models.Audit
 {
     public class Audit : InterFaces.IAudit.IAudit
     {
-        public DateTime CreatedDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string CreatedBy { get => throw new NotImplementedException(); set => throw new NotImplementedException(); } 
-        public DateTime? UpdatedDate { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string UpdatedBy { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public DateTime CreatedDate { get ; set ; }
+        public string CreatedBy { get; set; }
+        public DateTime? UpdatedDate { get; set; }
+        public string UpdatedBy { get; set; }
     }
 }

@@ -1,10 +1,7 @@
-﻿using App.Models.Item;
+﻿using Core.Domain.Models.AppModels.Items;
 using Services.InterFaces.ICoreService.User;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnitOfWork.Interfaces.IUnitOfWork;
 
 namespace Services.BaseService.CoreService.User

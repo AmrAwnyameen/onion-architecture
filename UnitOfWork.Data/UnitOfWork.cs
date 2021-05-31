@@ -1,13 +1,13 @@
-﻿using System;
+﻿using Core.Interfaces.IRepository;
+using Infrastructure.Data.Repository;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Threading.Tasks;
-using Core.Interfaces.IRepository;
-using Infrastructure.Data.Repository;
 using UnitOfWork.Interfaces.IUnitOfWork;
 
-namespace Infrastructure.Data.UnitOfWorks
+namespace UnitOfWork.Data
 {
     public class UnitOfWork : IUnitOfWork
     {
@@ -41,7 +41,7 @@ namespace Infrastructure.Data.UnitOfWorks
             try
             {
                 CreateTransaction();
-               _context.SaveChanges();
+                _context.SaveChanges();
                 Commit();
             }
             catch (DbUpdateConcurrencyException ex)
@@ -79,8 +79,6 @@ namespace Infrastructure.Data.UnitOfWorks
                 }
 
             }
-
-
 
             catch (Exception ex)
             {

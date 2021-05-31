@@ -1,11 +1,8 @@
+using Core.Domain.Context;
+using System.Data.Entity.Migrations;
+
 namespace Web.UI.Migrations
 {
-    using App.Models.Context;
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
-
     internal sealed class Configuration : DbMigrationsConfiguration<ApplicationDbContext>
     {
         public Configuration()
