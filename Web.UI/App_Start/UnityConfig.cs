@@ -1,6 +1,8 @@
 using Core.Domain.Context;
 using Core.Interfaces.IRepository;
 using Infrastructure.Data.Repository;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using Services.BaseService;
 using Services.BaseService.CoreService.User;
 using Services.Interfaces.IBaseServices;
@@ -12,6 +14,7 @@ using Unity;
 using Unity.Injection;
 using Unity.Lifetime;
 using Unity.Mvc5;
+using Web.UI.Controllers;
 
 namespace Web.UI
 {
@@ -33,6 +36,9 @@ namespace Web.UI
             container.RegisterType<IUnitOfWork, UnitOfWork.Data.UnitOfWork>();
             container.RegisterType<IUserService, UserService>();
             container.RegisterType<ApplicationDbContext>(new InjectionConstructor());
+            container.RegisterType<UserManager<ApplicationUser>>(new HierarchicalLifetimeManager());
+            container.RegisterType<IUserStore<ApplicationUser>, UserStore<ApplicationUser>>(new HierarchicalLifetimeManager());
+            container.RegisterType<AccountController>(new InjectionConstructor());
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }
